@@ -42,13 +42,13 @@ However, the portfolio entry will focus on documenting the following:
 ### Sales Overview
 <img width="1497" height="830" alt="image" src="https://github.com/user-attachments/assets/d09721cd-17d9-4aad-8f2a-96e7d681b040" />
 
-- **Timeline slicer**: User can select the sales period through the timeline slider. This will filter all the data by time period on current place and automatically apply to not only this but all following pages.
+- **Sales Time Period**: Timeline slicer that user can select the sales period through. This will filter all the data by time period on current place and automatically apply to not only this but all following pages.
 
-- **KPI cards**: Shows total sales, total profit, total number of orders, total ROI which are the key performance metrics we are tracking. These cards can reflect the values of all sales or filtered by timeline or selected brandmodels. During development, these KPIs are declared as power query measures; for example, total profit is calculated by summing the difference between price and manufactuere cost across all unique order IDs. 
+- **KPI cards(total sales, total profit, total number of orders, total ROI)**: The key performance metrics we are tracking. These cards can reflect the values of all sales or filtered by timeline or selected brandmodels. During development, these KPIs are declared as power query measures; for example, total profit is calculated by summing the difference between price and manufactuere cost across all unique order IDs. 
 
-- **Stacked Bar Chart**: Shows top brandmodel by sales volume(sort descending). Users can interact and apply filters to other visuals by clicking on specific brandmodels(see image). Actual sales figures and axis value labels are not actually included for confidentiality reasons. 
+- **Sales by brandmodel**: Bar Chart shows top brandmodel by sales volume(sort descending). Users can interact and apply filters to other visuals by clicking on specific brandmodels(see image). Actual sales figures and axis value labels are not actually included for confidentiality reasons. 
 
-- **Line graph**: Shows monthly sales and number of orders over the time period selected by the timeline slicer. By default it shows all sales and orders, but it can also be filtered by brandmodels through the interactive stacked bar chart. Actual sales figures and axis value labels are not actually included for confidentiality reasons. 
+- **Sales and Orders over time**: Line graph shows monthly sales and number of orders trend over the time period selected by the timeline slicer. By default it shows all sales and orders, but it can also be filtered by brandmodels through the interactive stacked bar chart. Actual sales figures and axis value labels are not actually included for confidentiality reasons. 
 
 - **Insights**: An experimental Power BI feature that generates data insights using AI. Also can be filtered by timeline or brandmodel and generate only relevant info to those selected. 
 
@@ -56,9 +56,14 @@ However, the portfolio entry will focus on documenting the following:
 ### Brands and Types
 <img width="1491" height="832" alt="image" src="https://github.com/user-attachments/assets/a0abb0b8-aab0-4d5d-97bc-bbac20685b53" />
 
-- **Brandmodel Bar Chart**:
+This page can makes it easy to visualize relationships between brandmodels and individual SKU parts and track their sales within specified sale periods. 
 
-- **SKU Bar Chart**:
+- **Sales Time Period**: The same timeline slicer from the previous page. It retains the filtered time period as mentioned. If user changes it on this page it will also affects all previous and later pages. 
+
+- **Parts Sold by Brandmodel**: Stacked bar chart showing amount of SKU parts and the types (marked by color legend) sold per brandmodel(redacted). It is interactive meaning one can select specific brandmodels and types to see how much the brandmodel accounts for specific SKU sales (and vice versa in the Part Sold by SKU chart) as shown in the screenshot.
+
+- **Part Sold by SKU**: Stacked bar chart showing amount of SKU parts and types (marked by color legend) sold by SKU IDs. It is interactive meaning one can select specific SKU ID to see what brandmodel accounts for specific SKU sales and vice versa. 
+
 
 ### Inventory
 <img width="1486" height="832" alt="image" src="https://github.com/user-attachments/assets/60057db6-03a4-402d-b2f2-9fba19a412d3" />
